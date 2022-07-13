@@ -23,6 +23,8 @@ include( 'admin/includes/functions.php' );
 
   <h1>Welcome to My Website!</h1>
   <p>This is the website frontend!</p>
+  <p>This is Beth, making an edit.</p>
+
 
   <?php
 
