@@ -11,7 +11,7 @@ include( 'includes/header.php' );
 if( !isset( $_GET['id'] ) )
 {
 
-  header( 'Location: about.php' );
+  header( 'Location: content_blocks.php' );
   die();
 
 }
@@ -33,7 +33,7 @@ if( isset( $_POST['name'] ) )
 
   }
 
-  header( 'Location: about.php' );
+  header( 'Location: content_blocks.php' );
   die();
 
 }
@@ -51,7 +51,7 @@ if( isset( $_GET['id'] ) )
   if( !mysqli_num_rows( $result ) )
   {
 
-    header( 'Location: about.php' );
+    header( 'Location: content_blocks.php' );
     die();
 
   }
@@ -62,13 +62,16 @@ if( isset( $_GET['id'] ) )
 
 ?>
 
-<h2>Edit Project</h2>
+<h2>Edit Content block</h2>
 
 <form method="post">
 
   <label for="name">Name:</label>
   <input type="text" name="name" id="name" value="<?php echo htmlentities( $record['name'] ); ?>">
 
+  <br>
+  <label for="type">Type:</label>
+  <input type="text" name="type" id="type" value="<?php echo htmlentities( $record['type'] ); ?>">
   <br>
 
   <label for="description">Description:</label>
@@ -87,11 +90,11 @@ if( isset( $_GET['id'] ) )
 
   </script>
   <br>
-  <input type="submit" value="Edit About">
+  <input type="submit" value="Edit Content block">
 
 </form>
 
-<p><a href="projects.php"><i class="fas fa-arrow-circle-left"></i> Return to About</a></p>
+<p><a href="projects.php"><i class="fas fa-arrow-circle-left"></i> Return to Content block</a></p>
 
 
 <?php

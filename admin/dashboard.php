@@ -22,8 +22,8 @@ include( 'includes/header.php' );
     </a>
   </li>
   <li>
-    <a href="about.php">
-      Manage About
+    <a href="content_blocks.php">
+      Manage Content blocks
     </a>
   </li>
   <li>

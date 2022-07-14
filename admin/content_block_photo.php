@@ -9,7 +9,7 @@ secure();
 if( !isset( $_GET['id'] ) )
 {
 
-  header( 'Location: about.php' );
+  header( 'Location: content_blocks.php' );
   die();
 
 }
@@ -49,7 +49,7 @@ if( isset( $_FILES['photo'] ) )
 
   set_message( 'About photo has been updated' );
 
-  header( 'Location: about.php' );
+  header( 'Location: content_blocks.php' );
   die();
 
 }
@@ -69,7 +69,7 @@ if( isset( $_GET['id'] ) )
 
     set_message( 'Project photo has been deleted' );
 
-    header( 'Location: about.php' );
+    header( 'Location: content_blocks.php' );
     die();
 
   }
@@ -83,7 +83,7 @@ if( isset( $_GET['id'] ) )
   if( !mysqli_num_rows( $result ) )
   {
 
-    header( 'Location: about.php' );
+    header( 'Location: content_blocks.php' );
     die();
 
   }
@@ -97,7 +97,7 @@ include 'includes/wideimage/WideImage.php';
 
 ?>
 
-<h2>Edit Project</h2>
+<h2>Edit Content block Image</h2>
 
 <p>
   Note: For best results, photos should be approximately 800 x 800 pixels.
@@ -113,7 +113,7 @@ include 'includes/wideimage/WideImage.php';
 
   ?>
   <p><img src="data:image/jpg;base64,<?php echo base64_encode( $data ); ?>" width="200" height="200"></p>
-  <p><a href="about_photo.php?id=<?php echo $_GET['id']; ?>&delete"><i class="fas fa-trash-alt"></i> Delete this Photo</a></p>
+  <p><a href="content_block_photo.php?id=<?php echo $_GET['id']; ?>&delete"><i class="fas fa-trash-alt"></i> Delete this Photo</a></p>
 
 <?php endif; ?>
 
@@ -128,7 +128,7 @@ include 'includes/wideimage/WideImage.php';
 
 </form>
 
-<p><a href="about.php"><i class="fas fa-arrow-circle-left"></i> Return to About</a></p>
+<p><a href="content_blocks.php"><i class="fas fa-arrow-circle-left"></i> Return to Content block</a></p>
 
 
 <?php
