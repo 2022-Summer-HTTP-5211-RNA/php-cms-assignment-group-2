@@ -16,7 +16,7 @@ switch( $_GET['type'] )
 {
 
   case 'project':
-    
+
     $query = 'SELECT photo 
       FROM projects
       WHERE id = '.$_GET['id'].'
@@ -25,9 +25,22 @@ switch( $_GET['type'] )
     $record = mysqli_fetch_assoc( $result );
 
     if( !$record['photo'] ) $record['photo'] = $camera;
-    
+
     break;
-      
+
+    case 'about':
+
+    $query = 'SELECT photo 
+      FROM about
+      WHERE id = '.$_GET['id'].'
+      LIMIT 1';
+    $result = mysqli_query( $connect, $query );
+    $record = mysqli_fetch_assoc( $result );
+
+    if( !$record['photo'] ) $record['photo'] = $camera;
+
+    break;
+
 }
 
 include 'includes/wideimage/WideImage.php';
