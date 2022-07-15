@@ -24,7 +24,7 @@ if( isset( $_GET['delete'] ) )
 }
 
 $query = 'SELECT *
-  FROM about';
+  FROM content_block';
 $result = mysqli_query( $connect, $query );
 
 ?>
@@ -45,7 +45,7 @@ $result = mysqli_query( $connect, $query );
   <?php while( $record = mysqli_fetch_assoc( $result ) ): ?>
     <tr>
       <td align="center">
-        <img src="image.php?type=about&id=<?php echo $record['id']; ?>&width=300&height=300&format=inside">
+        <img src="image.php?type=content_block&id=<?php echo $record['id']; ?>&width=300&height=300&format=inside">
       </td>
       <td align="center"><?php echo $record['id']; ?></td>
         <td align="left"> <?php echo htmlentities( $record['name'] ); ?></td>

@@ -28,10 +28,10 @@ switch( $_GET['type'] )
 
     break;
 
-    case 'about':
+    case 'content_block':
 
     $query = 'SELECT photo 
-      FROM about
+      FROM content_block
       WHERE id = '.$_GET['id'].'
       LIMIT 1';
     $result = mysqli_query( $connect, $query );

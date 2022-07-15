@@ -37,7 +37,7 @@ if( isset( $_FILES['photo'] ) )
           break;
       }
 
-      $query = 'UPDATE about SET
+      $query = 'UPDATE content_block SET
         photo = "data:image/'.$type.';base64,'.base64_encode( file_get_contents( $_FILES['photo']['tmp_name'] ) ).'"
         WHERE id = '.$_GET['id'].'
         LIMIT 1';
@@ -47,7 +47,7 @@ if( isset( $_FILES['photo'] ) )
 
   }
 
-  set_message( 'About photo has been updated' );
+  set_message( 'Content block photo has been updated' );
 
   header( 'Location: content_blocks.php' );
   die();
@@ -61,13 +61,13 @@ if( isset( $_GET['id'] ) )
   if( isset( $_GET['delete'] ) )
   {
 
-    $query = 'UPDATE about SET
+    $query = 'UPDATE content_block SET
       photo = ""
       WHERE id = '.$_GET['id'].'
       LIMIT 1';
     $result = mysqli_query( $connect, $query );
 
-    set_message( 'Project photo has been deleted' );
+    set_message( 'Content block photo has been deleted' );
 
     header( 'Location: content_blocks.php' );
     die();
@@ -75,7 +75,7 @@ if( isset( $_GET['id'] ) )
   }
 
   $query = 'SELECT *
-    FROM about
+    FROM content_block
     WHERE id = '.$_GET['id'].'
     LIMIT 1';
   $result = mysqli_query( $connect, $query );

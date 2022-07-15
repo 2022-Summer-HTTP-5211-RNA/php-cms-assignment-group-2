@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1608aa7d-7707-4611-8966-a05f7d7cc6df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/content_blocks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/about_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/content_block_add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/about_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/content_block_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/about_photo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/content_block_photo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-    </list>
+    <list default="true" id="1608aa7d-7707-4611-8966-a05f7d7cc6df" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +54,7 @@
       <workItem from="1657674028503" duration="115000" />
       <workItem from="1657680961259" duration="1269000" />
       <workItem from="1657734115461" duration="4845000" />
-      <workItem from="1657816451151" duration="1379000" />
+      <workItem from="1657816451151" duration="1413000" />
     </task>
     <servers />
   </component>
