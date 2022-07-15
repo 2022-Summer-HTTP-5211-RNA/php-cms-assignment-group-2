@@ -110,3 +110,15 @@ CREATE TABLE IF NOT EXISTS `skills` (
   `photo` longblob,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Table structure for table `content_block`
+--
+
+CREATE TABLE `content_block` (
+ `id` int(11) NOT NULL,
+ `name` varchar(200) NOT NULL,
+ `description` varchar(255) NOT NULL,
+ `photo` longblob DEFAULT NULL,
+ `type` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='content_block';
