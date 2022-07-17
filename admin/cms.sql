@@ -122,3 +122,12 @@ CREATE TABLE `content_block` (
  `photo` longblob DEFAULT NULL,
  `type` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='content_block';
+
+DROP TABLE IF EXISTS `social_media`;
+CREATE TABLE IF NOT EXISTS `social_media` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `url` varchar(100) NOT NULL,
+  `photo` longblob,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;

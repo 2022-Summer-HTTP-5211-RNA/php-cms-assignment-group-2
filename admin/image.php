@@ -54,6 +54,19 @@ switch( $_GET['type'] )
       if( !$record['photo'] ) $record['photo'] = $camera;
 
       break;
+
+      case 'social_media':
+    
+        $query = 'SELECT photo 
+          FROM social_media
+          WHERE id = '.$_GET['id'].'
+          LIMIT 1';
+        $result = mysqli_query( $connect, $query );
+        $record = mysqli_fetch_assoc( $result );
+        
+        if( !$record['photo'] ) $record['photo'] = $camera;
+        
+        break;
 }
 
 include 'includes/wideimage/WideImage.php';

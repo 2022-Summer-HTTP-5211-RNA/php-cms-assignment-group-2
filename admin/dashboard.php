@@ -22,6 +22,11 @@ include( 'includes/header.php' );
     </a>
   </li>
   <li>
+    <a href="social_media.php">
+      Manage SocialMedia
+    </a>
+  </li>
+  <li>
     <a href="users.php">
       Manage Users
     </a>

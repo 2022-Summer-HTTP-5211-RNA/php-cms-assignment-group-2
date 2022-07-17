@@ -2,9 +2,9 @@
 
 /*$connect = mysqli_connect(
     "localhost",
-    "id18907037_lebron",
-    "rzNsz9e{xX(YR|Or",
-    "id18907037_portfolio"
+    "root",
+    "",
+    "php-cms"
 );*/
 
 $connect = mysqli_connect(
