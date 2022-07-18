@@ -35,7 +35,7 @@ if( isset( $_POST['name'] ) )
 
 ?>
 
-<h2>Add Project</h2>
+<h2>Add Content Block</h2>
 
 <form method="post">
 
@@ -44,12 +44,12 @@ if( isset( $_POST['name'] ) )
   <input type="text" name="name" id="name">
 
   <br>
-  <label for="type">Name:</label>
+  <label for="type">Type:</label>
   <input type="text" name="type" id="type">
 
   <br>
 
-  <label for="description">Content block me:</label>
+  <label for="description">Content block:</label>
   <textarea type="text" name="description" id="description" rows="10"></textarea>
 
   <script>
