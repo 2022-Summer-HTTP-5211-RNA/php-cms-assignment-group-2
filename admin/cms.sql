@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `skills` (
 CREATE TABLE `content_block` (
  `id` int(11) NOT NULL,
  `name` varchar(200) NOT NULL,
- `description` varchar(255) NOT NULL,
+ `description` text NOT NULL,
  `photo` longblob DEFAULT NULL,
  `type` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='content_block';
@@ -131,3 +131,22 @@ CREATE TABLE IF NOT EXISTS `social_media` (
   `photo` longblob,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for table `skills`
+--
+ALTER TABLE `skills`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `content_block`
+--
+ALTER TABLE `content_block`
+  ADD PRIMARY KEY (`id`);
+  
+--
+-- Indexes for table `social_media`
+--
+ALTER TABLE `social_media`
+  ADD PRIMARY KEY (`id`);
+
