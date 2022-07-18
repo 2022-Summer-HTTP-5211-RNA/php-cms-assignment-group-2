@@ -14,9 +14,10 @@ if( isset( $_POST['name'] ) )
   if( $_POST['name'] and $_POST['description'] )
   {
 
-    $query = 'INSERT INTO Content block (
+    $query = 'INSERT INTO content_block (
         name,
-        description
+        description,
+        type
       ) VALUES (
          "'.mysqli_real_escape_string( $connect, $_POST['name'] ).'",
          "'.mysqli_real_escape_string( $connect, $_POST['description'] ).'",
@@ -79,3 +80,4 @@ if( isset( $_POST['name'] ) )
 include( 'includes/footer.php' );
 
 ?>
+
