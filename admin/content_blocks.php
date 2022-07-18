@@ -11,7 +11,7 @@ include( 'includes/header.php' );
 if( isset( $_GET['delete'] ) )
 {
 
-  $query = 'DELETE FROM about
+  $query = 'DELETE FROM content_block
     WHERE id = '.$_GET['delete'].'
     LIMIT 1';
   mysqli_query( $connect, $query );
