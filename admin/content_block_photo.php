@@ -134,5 +134,4 @@ include 'includes/wideimage/WideImage.php';
 <?php
 
 include( 'includes/footer.php' );
-
 ?>
