@@ -10,7 +10,6 @@
   <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
 </head>
 <body>
-
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding sidebar" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft closenav">Close Menu</a>
