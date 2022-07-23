@@ -4,7 +4,7 @@
   <title>PHP CMS - Administrative Dashboard</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/w3.css">
+  <link rel="stylesheet" href="../admin/includes/w3.css">
   <link href="../admin/includes/styles.css" type="text/css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ca8a2a996a.js" crossorigin="anonymous"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
@@ -17,10 +17,10 @@
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>CMS Dashboard</b></h3>
   </div>
-  <div class="w3-bar-block">    
+  <div class="w3-bar-block">
     <?php if(isset($_SESSION['id'])): ?>
     <ul class="dashboard">
-     
+
       <li><a href="projects.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa-solid fa-list-check"></i>&nbsp;&nbsp;Projects</a></li>
       <li><a href="skills.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;&nbsp;Skills</a></li>
       <li><a href="social_media.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa-solid fa-hashtag"></i>&nbsp;&nbsp;Social Media</a></li>

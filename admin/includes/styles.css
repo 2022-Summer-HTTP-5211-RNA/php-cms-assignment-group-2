@@ -46,7 +46,7 @@ table {
   width: 100%;
   margin-bottom: 40px;
 }
-td img, 
+td img,
 th img {
   margin: 0;
   padding: 0;
@@ -115,3 +115,4 @@ input[type=submit] {
 .content-container {
   margin-left:340px;margin-right:40px
 }
+
