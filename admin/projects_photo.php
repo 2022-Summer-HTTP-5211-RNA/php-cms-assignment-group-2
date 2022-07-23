@@ -97,7 +97,8 @@ include 'includes/wideimage/WideImage.php';
 
 ?>
 
-<h2>Edit Project</h2>
+<h2>Edit Project - Add Photo</h2>
+<hr class="w3-round">
 
 <p>
   Note: For best results, photos should be approximately 800 x 800 pixels.

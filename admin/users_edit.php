@@ -76,6 +76,7 @@ if( isset( $_GET['id'] ) )
 ?>
 
 <h2>Edit User</h2>
+<hr class="w3-round">
 
 <form method="post">
   

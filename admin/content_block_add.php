@@ -37,6 +37,7 @@ if( isset( $_POST['name'] ) )
 ?>
 
 <h2>Add Content Block</h2>
+<hr class="w3-round">
 
 <form method="post">
 

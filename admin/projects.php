@@ -31,6 +31,7 @@ $result = mysqli_query( $connect, $query );
 ?>
 
 <h2>Manage Projects</h2>
+<hr class="w3-round">
 
 <table>
   <tr>

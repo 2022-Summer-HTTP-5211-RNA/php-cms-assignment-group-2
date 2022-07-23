@@ -30,6 +30,7 @@ $result = mysqli_query( $connect, $query );
 ?>
 
 <h2>Manage Content Blocks</h2>
+<hr class="w3-round">
 
 <table>
   <tr>

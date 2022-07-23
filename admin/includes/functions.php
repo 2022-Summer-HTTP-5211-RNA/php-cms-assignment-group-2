@@ -50,8 +50,7 @@ function get_message()
     echo '<p style="padding: 0 1%;" class="error">
         <i class="fas fa-exclamation-circle"></i> 
         '.$_SESSION['message'].'
-      </p>
-      <hr>';
+      </p>';
     unset( $_SESSION['message'] );
     
   }

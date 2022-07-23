@@ -41,6 +41,7 @@ if( isset( $_POST['first'] ) )
 ?>
 
 <h2>Add User</h2>
+<hr class="w3-round">
 
 <form method="post">
   

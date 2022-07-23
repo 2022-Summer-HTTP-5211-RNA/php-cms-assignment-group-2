@@ -33,6 +33,7 @@ if( isset( $_POST['skill'] ) )
 ?>
 
 <h2>Add Skill</h2>
+<hr class="w3-round">
 
 <form method="post">
   

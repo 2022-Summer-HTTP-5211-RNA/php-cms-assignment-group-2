@@ -63,7 +63,8 @@ if( isset( $_GET['id'] ) )
 
 ?>
 
-<h2>Edit Content block</h2>
+<h2>Edit Content Block</h2>
+<hr class="w3-round">
 
 <form method="post">
 

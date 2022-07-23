@@ -41,7 +41,7 @@ if( isset( $_POST['title'] ) )
 ?>
 
 <h2>Add Project</h2>
-
+<hr class="w3-round">
 <form method="post">
   
   <label for="title">Title:</label>

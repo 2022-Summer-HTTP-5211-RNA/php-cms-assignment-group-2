@@ -97,10 +97,10 @@ include 'includes/wideimage/WideImage.php';
 
 ?>
 
-<h2>Edit Skill</h2>
-
+<h2>Edit Skill - Add Photo</h2>
+<hr class="w3-round">
 <p>
-  Note: For best results, photos should be approximately 800 x 800 pixels.
+  Note: For best results, photos should be approximately 200 x 200 pixels.
 </p>
 
 <?php if( $record['photo'] ): ?>

@@ -62,7 +62,7 @@ if( isset( $_GET['id'] ) )
 ?>
 
 <h2>Edit Skill</h2>
-
+<hr class="w3-round">
 <form method="post">
   
   <label for="skill">Skill:</label>

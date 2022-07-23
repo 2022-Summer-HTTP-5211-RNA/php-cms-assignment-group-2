@@ -23,7 +23,7 @@ if( isset( $_POST['email'] ) )
     $_SESSION['id'] = $record['id'];
     $_SESSION['email'] = $record['email'];
     
-    header( 'Location: dashboard.php' );
+    header( 'Location: projects.php' );
     die();
     
   }
